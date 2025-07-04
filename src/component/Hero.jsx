@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
     return (
         <div>
-            <img src="https://rabbil.com/files/rabbilVai1.webp?v=1"/>
+            <h1>here is hero section</h1>
         </div>
     );
 };
