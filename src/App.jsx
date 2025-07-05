@@ -8,22 +8,24 @@ import Footer from './component/Footer';
 const App = () => {
 
 
-  let markes=90;
+  let city=['dhaka','london','panjab','lahor'];
 
   return (
     <div>
 
-      {(()=>{
-        if(markes>60){
-          return <h4> perfect</h4>
-        }
-      }
+      <ul>
+        {
 
-      )()}
-     
-      
-     
-      
+          city.map((item,i)=>{
+            return <li key={i.toString()}> {item}</li>
+          })
+
+        }
+
+        
+      </ul>
+
+
     </div>
 
 
