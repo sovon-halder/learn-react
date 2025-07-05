@@ -14,14 +14,12 @@ const App = () => {
     <div>
 
       <ul>
-        {
-
-          city.map((item,i)=>{
-            return <li key={i.toString()}> {item}</li>
-          })
-
-        }
-
+      
+          {
+            city.map((item,i)=>{
+              return <li key = {i.toString()}>{item}</li>
+            })
+          }
         
       </ul>
 
