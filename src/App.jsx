@@ -10,18 +10,20 @@ import Footer from './component/Footer';
 const App = () => {
 
   const loginbutton= false;
-switch(loginbutton){
 
-    case true:
-        return <button>login</button>
+return(
 
-    case false:
-      return <button>logout</button>
+<div>
 
-      default:
-        return null
+  {
+  loginbutton == true?
+    <button>login</button>
+    :<button>logout</button>
 }
+</div>
 
+
+)
 
     };
   
