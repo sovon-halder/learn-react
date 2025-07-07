@@ -7,19 +7,28 @@ import Footer from './component/Footer';
 
 const App = () => {
 
+  const status=false;
 
-  let city=[56,38,543,2,21,14,124,34,53,46];
+    if(status==true){
+      return(
+        <div>
+          status is true;
+        </div>
+      );
+    }else{
+      return(
+        <div>
+          status is false;
+        </div>
+      );
+    }
+  
 
-  return (
-    <ul>
-      {
-        city.map((item)=>{
-          return <li>{item}</li>
-        })
-      }
-    </ul>
-    
-  );
+
+
+
+
+
 };
 
 export default App;
