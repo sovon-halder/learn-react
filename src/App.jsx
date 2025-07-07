@@ -5,23 +5,24 @@ import Hero from './component/Hero';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
 
+const loginbutton=(status)=>{
+  if(status){
+    return <button>Login</button>
+  }else{
+    return <button>Logout</button>
+  }
+}
+
 const App = () => {
 
-  const status=false;
+return(
+  <div>
+    <h1a> Login status</h1a>
+    {loginbutton(false)}
+  </div>
+)
 
-    if(status==true){
-      return(
-        <div>
-          status is true;
-        </div>
-      );
-    }else{
-      return(
-        <div>
-          status is false;
-        </div>
-      );
-    }
+    };
   
 
 
@@ -29,6 +30,6 @@ const App = () => {
 
 
 
-};
+
 
 export default App;
