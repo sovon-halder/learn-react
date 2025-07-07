@@ -5,22 +5,23 @@ import Hero from './component/Hero';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
 
-const loginbutton=(status)=>{
-  if(status){
-    return <button>Login</button>
-  }else{
-    return <button>Logout</button>
-  }
-}
+
 
 const App = () => {
 
-return(
-  <div>
-    <h1a> Login status</h1a>
-    {loginbutton(false)}
-  </div>
-)
+  const loginbutton= false;
+switch(loginbutton){
+
+    case true:
+        return <button>login</button>
+
+    case false:
+      return <button>logout</button>
+
+      default:
+        return null
+}
+
 
     };
   
