@@ -8,25 +8,17 @@ import Footer from './component/Footer';
 const App = () => {
 
 
-  let city=['dhaka','london','panjab','lahor'];
+  let city=[56,38,543,2,21,14,124,34,53,46];
 
   return (
-    <div>
-
-      <ul>
-      
-          {
-            city.map((item,i)=>{
-              return <li key = {i.toString()}>{item}</li>
-            })
-          }
-        
-      </ul>
-
-
-    </div>
-
-
+    <ul>
+      {
+        city.map((item)=>{
+          return <li>{item}</li>
+        })
+      }
+    </ul>
+    
   );
 };
 
