@@ -8,18 +8,16 @@ import Footer from './component/Footer';
 
 
 const App = () => {
-
-  const loginbutton= true;
-
+  const ite=false;
 return(
 
 <div>
+{(()=>{
+    if(ite==true){return<button>ok</button>}else{
+return <button>not ok</button>
+    }
+})()}
 
-  {
-  loginbutton?
-    <button>login</button>
-    :<button>logout</button>
-}
 </div>
 
 
