@@ -1,11 +1,10 @@
 import React from 'react';
+import Header from './Header';
 
 const Footer = () => {
     return (
         <div>
-            <h1>
-                All copyright is reserved here.
-            </h1>
+            <Header></Header>
         </div>
     );
 };

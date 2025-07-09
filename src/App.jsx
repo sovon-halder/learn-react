@@ -6,31 +6,12 @@ import Contact from './component/Contact';
 import Footer from './component/Footer';
 
 
+const App=()=>{
+  return(
 
-const App = () => {
-  const ite=false;
-return(
+      <Contact title="well props"/>
 
-<div>
-{(()=>{
-    if(ite==true){return<button>ok</button>}else{
-return <button>not ok</button>
-    }
-})()}
-
-</div>
-
-
-)
-
-    };
-  
-
-
-
-
-
-
-
+  );
+};
 
 export default App;

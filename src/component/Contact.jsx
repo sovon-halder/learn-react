@@ -1,10 +1,10 @@
 import React from 'react';
+import Footer from './Footer';
 
 const Contact = () => {
     return (
         <div>
-            <input placeholder='name:'/>
-            <button>submit</button>
+            <Footer></Footer>
         </div>
     );
 };
