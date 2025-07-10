@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Header = (props) => {
+const Header = () => {
     return (
 <div>
-    <button onClick={props.alertBtn}>submit</button>
+    
 </div>
     );
 };

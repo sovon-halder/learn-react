@@ -1,22 +1,24 @@
 import React, { Fragment } from 'react';
 
-import Hero from './component/Hero';
-import Contact from './component/Contact';
-import Header from './component/Header';
 
 
 
 const App=()=>{
 
-const btn=()=>{
-  alert("hello devlopers ");
+function call(){
+alert("hello react devlopers")
 }
-
-
 
   return(
 <div>
-      <Header alertBtn={btn}/>
+   <button onClick={call}>submit</button>   
+
+
+
+
+
+
+
 </div>
       
 
