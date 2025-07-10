@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Hero = () => {
+const Hero = (props) => {
     return (
         <div>
-            <h1>here is hero section</h1>
+            <h3>{props.card}</h3>
         </div>
     );
 };

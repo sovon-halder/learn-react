@@ -1,12 +1,13 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
             <ul>
-                <li>Home</li>
-                <li>others</li>
-                <li>Blog</li>
+                <li>{props.itemob['name']}</li>
+                <li>{props.itemob['age']}</li>
+                <li>{props.itemob['city']}</li>
+                <li>{props.itemob['phone']}</li>
             </ul>
         </div>
     );
