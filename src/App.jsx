@@ -5,16 +5,20 @@ import React, { Fragment } from 'react';
 
 const App=()=>{
 
-function call(){
-alert("hello react devlopers")
-}
+  const postForm=(event)=>{
+event.preventDefault();
+alert("from submited");
+  }
 
   return(
 <div>
-   <button onClick={call}>submit</button>   
+     
 
 
-
+<form onSubmit={postForm}>
+  <input placeholder='name' type='text'/>
+  <button type="submit" >submit</button>
+</form>
 
 
 
