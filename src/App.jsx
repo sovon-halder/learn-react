@@ -1,24 +1,25 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useRef } from 'react';
 
 
 
 
 const App=()=>{
 
-  const postForm=(event)=>{
-event.preventDefault();
-alert("from submited");
+  let use=useRef();
+ 
+
+  const change=()=>{
+ use.current.innerText="hi";
   }
 
+ 
   return(
 <div>
      
 
+<h2 ref={use}></h2>
+<button onClick={change}>click</button>
 
-<form onSubmit={postForm}>
-  <input placeholder='name' type='text'/>
-  <button type="submit" >submit</button>
-</form>
 
 
 
