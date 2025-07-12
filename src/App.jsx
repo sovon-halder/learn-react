@@ -1,24 +1,23 @@
-import React, { Fragment, useRef } from 'react';
+import React, { Fragment, useEffect, useRef } from 'react';
 
 
 
 
 const App=()=>{
 
-  let use=useRef();
- 
+  const user=useRef(null);
+ useEffect(()=>{
+      user.current.focus();
+ });
 
-  const change=()=>{
- use.current.innerText="hi";
-  }
+
 
  
   return(
 <div>
      
 
-<h2 ref={use}></h2>
-<button onClick={change}>click</button>
+<input ref={user} type="text" placeholder="enter something"/>
 
 
 
