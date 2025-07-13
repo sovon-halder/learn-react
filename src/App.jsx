@@ -2,15 +2,16 @@ import { useRef } from "react";
 
 
 const App=()=>{
-  const usa=useRef();
-const action=()=>{
-usa.current.innerText="love you sovon"
+  
+const uee = useRef();
+const acm =()=>{
+  uee.current.innerHTML="<ul><li>home</li><li>blog</li><li>contact</li></ul>"
 }
 
   return(
    <div>
-<h2 ref={usa}></h2>
-<button onClick={action}>click here</button>
+          <h1 ref={uee}></h1>
+          <button onClick={acm}>press here</button>
    </div>
   );
 };
