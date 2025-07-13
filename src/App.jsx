@@ -1,32 +1,19 @@
-import React, { Fragment, useEffect, useRef } from 'react';
-
-
+import { useRef } from "react";
 
 
 const App=()=>{
+  const usa=useRef();
+const action=()=>{
+usa.current.innerText="love you sovon"
+}
 
-  const user=useRef(null);
- useEffect(()=>{
-      user.current.focus();
- });
-
-
-
- 
   return(
-<div>
-     
-
-<input ref={user} type="text" placeholder="enter something"/>
-
-
-
-
-
-</div>
-      
-
+   <div>
+<h2 ref={usa}></h2>
+<button onClick={action}>click here</button>
+   </div>
   );
 };
 
-export default App;
+
+export default App
