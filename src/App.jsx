@@ -2,16 +2,17 @@ import { useRef } from "react";
 
 
 const App=()=>{
-  
-const uee = useRef();
-const acm =()=>{
-  uee.current.innerHTML="<ul><li>home</li><li>blog</li><li>contact</li></ul>"
-}
+ 
+  let uss=useRef();
+  const change=()=>{
+    uss.current.src="https://placehold.co/800?text=Hello+World&font=roboto"
 
+  }
   return(
    <div>
-          <h1 ref={uee}></h1>
-          <button onClick={acm}>press here</button>
+       
+       <img ref={uss} src="https://placehold.co/600x400"/>
+       <button onClick={change}>click</button>
    </div>
   );
 };
