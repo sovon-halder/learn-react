@@ -3,16 +3,22 @@ import { useRef } from "react";
 
 const App=()=>{
  
-  let uss=useRef();
-  const change=()=>{
-    uss.current.src="https://placehold.co/800?text=Hello+World&font=roboto"
+  let firstname= useRef();
+  let lastname= useRef();
 
+  const val=()=>{
+    let fname= firstname.current.value;
+    let lname= lastname.current.value;
+    alert(fname+ " "+lname)
   }
+
   return(
    <div>
-       
-       <img ref={uss} src="https://placehold.co/600x400"/>
-       <button onClick={change}>click</button>
+       <input ref={firstname} placeholder="first name"/><br/>
+       <input ref={lastname} placeholder="last name"/><br/>
+
+       <button onClick={val}>Click</button>
+
    </div>
   );
 };
