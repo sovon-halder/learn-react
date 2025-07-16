@@ -5,11 +5,11 @@ import { useRef } from "react";
 const App=()=>{
 
  
-const myHeadline= useRef();
-const change=()=>{
-  myHeadline.current.classList.remove('text-success');
-  myHeadline.current.classList.add('text-danger');
+const number= useRef("initialValue: 0");
 
+const change=()=>{
+let number= number.current++;
+console.log(number);
 }
  
   
@@ -18,8 +18,8 @@ const change=()=>{
 
   return(
    <div>
-       <h1 className="text-success" ref={myHeadline}>this is headline</h1>
-       <button onClick={change}>click</button>
+       
+      <button onClick={change}>click</button>
 
    </div>
   );
