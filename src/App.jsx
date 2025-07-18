@@ -6,9 +6,16 @@
   const App=()=>{
 
   const a=()=>{
-    fetch('https://jsonplaceholder.typicode.com/posts/1')
-    .then((res)=>res.json())
+    fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((res)=>{
+      if(!res.ok){
+        const a=`error ${res.status}`
+        throw new Error (a)
+      }
+      return res.json();
+    })
     .then((res)=>console.log(res))
+    .ca
 
   }
 
