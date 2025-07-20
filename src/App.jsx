@@ -6,7 +6,7 @@
   const App=()=>{
 
   const a=()=>{
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://jsonplaceholder.typicode.com/posts/103')
     .then((res)=>{
       if(!res.ok){
         const a=`error ${res.status}`
@@ -15,7 +15,9 @@
       return res.json();
     })
     .then((res)=>console.log(res))
-    .ca
+    .catch((error)=>{
+      console.error('fetch Error',error)
+    })
 
   }
 
