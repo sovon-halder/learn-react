@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Hero = (props) => {
+const Hero=()=> {
     return (
         <div>
-            <h3>{props.card}</h3>
+            <h3>this is hero</h3>
         </div>
     );
 };
