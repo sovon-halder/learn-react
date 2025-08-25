@@ -3,11 +3,15 @@
  
   const App=()=>{ 
 
- let checker=true;
   return (
     <div>
-      <h1>login status</h1>
-      {checker && <button>login</button>}
+    {(()=>{
+      if(false){
+        return <h1>Hello World</h1>
+      }else{
+        return <h1>Goodbye World</h1>
+      }
+    })()}
     </div>
   );
   };
