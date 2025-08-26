@@ -1,17 +1,16 @@
 
 import Hero from './component/Hero';
+const App=()=>{ 
 
-  const App=()=>{ 
 
-    const deta={
-      name:"sovon",
-      age:24,
-      des:"i am a web developer"
-    }
+  const btn=()=>{
+    alert("Button Clicked");
+  }
+
   return (
 
     <div>
-      <Hero item={deta}/>
+      <Hero pass={btn}/>
     </div>
 
   );
