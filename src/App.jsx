@@ -2,15 +2,18 @@
 import Hero from './component/Hero';
 const App=()=>{ 
 
-
+const postFrom=(event)=>{
+event.preventDefault();
+}
  
 
   return (
 
     <div>
-      <button onClick={()=>{
-        alert('this is alert');
-      }}>submit</button>
+      <from onSubmit={postFrom}>
+        <input type="text" placeholder='name' />
+        <button type="submit">submit</button>
+      </from>
     </div>
 
   );
