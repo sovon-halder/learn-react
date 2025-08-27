@@ -4,16 +4,17 @@ const App=()=>{
 
 const postFrom=(event)=>{
 event.preventDefault();
+alert("form submitted");
 }
  
 
   return (
 
     <div>
-      <from onSubmit={postFrom}>
+      <form onSubmit={postFrom}>
         <input type="text" placeholder='name' />
         <button type="submit">submit</button>
-      </from>
+      </form>
     </div>
 
   );
