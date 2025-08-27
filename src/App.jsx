@@ -1,20 +1,21 @@
 
+import { useRef } from 'react';
 import Hero from './component/Hero';
 const App=()=>{ 
 
-const postFrom=(event)=>{
-event.preventDefault();
-alert("form submitted");
-}
- 
+const uss=useRef();
+
+ const ready=()=>{
+  uss.current.innerText="hello";
+ }
 
   return (
 
     <div>
-      <form onSubmit={postFrom}>
-        <input type="text" placeholder='name' />
-        <button type="submit">submit</button>
-      </form>
+      <h1 ref={uss}>welcome to react</h1>
+      <button onClick={ready}>click</button>
+        
+     
     </div>
 
   );
