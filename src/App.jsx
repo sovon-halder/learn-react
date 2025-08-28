@@ -6,7 +6,8 @@ const App=()=>{
 const uss=useRef();
 
  const ready=()=>{
-  uss.current.innerText="hello";
+  uss.current.innerText="hello world";
+  uss.current.style.color="red";
  }
 
   return (
