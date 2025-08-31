@@ -3,19 +3,19 @@ import { useRef } from 'react';
 import Hero from './component/Hero';
 const App=()=>{ 
 
-const uss=useRef();
+let fname,lname=useRef();
 
- const ready=()=>{
-  uss.current.innerText="hello world";
-  uss.current.style.color="red";
+ const change=()=>{
+  let fnam=fname.current.value;
+  let lnam=lname.current.value;
+  alert(fnam+" "+lnam);
  }
 
   return (
 
     <div>
-      <h1 ref={uss}>welcome to react</h1>
-      <button onClick={ready}>click</button>
-        
+      <input ref={fnam} placeholder='First Name' type="text" /><br/>
+      <input ref={lnam} placeholder='Last Name' type="text" /><br/>
      
     </div>
 
